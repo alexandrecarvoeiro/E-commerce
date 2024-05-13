@@ -1,0 +1,43 @@
+{% extends "./base.html" %}
+
+{% block content %}
+
+<header class="custom-header">
+    <div class="container">
+        <div class="text-center">
+            <h1>Login</h1>
+            <p>Inicie a sua sessão</p>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <center>
+            <div class="col-8">
+
+                <br/><br/>
+
+
+                <form method="POST" action="{% url 'login' %}">
+                    {% csrf_token %}
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label for="passwd">Password:</label>
+                    <input type="password" id="passwd" name="passwd"><br><br>
+                    <input type="submit" value="Login">
+                </form>
+
+
+            </div>
+        </center>
+
+    </div>
+</div>
+
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+
+{% endblock %}

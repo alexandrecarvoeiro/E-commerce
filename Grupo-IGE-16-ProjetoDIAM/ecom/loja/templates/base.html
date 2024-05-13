@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Tecnocommerce</title>
+
+    <link rel="icon" href="{% static 'loja/assets/icon.png' %}"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+
+    <link href="{% static 'loja/css/styles_boot.css' %}" rel="stylesheet"/>
+
+    <link href="{% static 'loja/css/styles.css' %}" rel="stylesheet"/>
+
+</head>
+<body>
+{% include 'navbar.html' %}
+
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }}" role="alert">
+    {{ message }}
+</div>
+{% endfor %}
+{% endif %}
+
+
+{% block content %}
+
+{% endblock %}
+
+
+<footer class="custom-footer">
+    <div class="container">
+        <p class="text-center">Copyright &copy; TecnoCommerce</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="{% static 'loja/js/scripts.js' %}"></script>
+
+
+</body>

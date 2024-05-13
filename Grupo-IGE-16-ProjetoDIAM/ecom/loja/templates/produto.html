@@ -1,0 +1,63 @@
+{% extends "./base.html" %}
+{% block content %}
+
+<div class="container">
+    <br/>
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{{ produto.imagem.url }}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <center>
+                        <h5 class="card-title">{{ produto.nome }}</h5>
+
+
+                        {% if avaliacoes %}
+                        <p>Média das Avaliações: {{ media_avaliacoes|floatformat:2 }}</p>
+                        {% else %}
+                        <p>Este produto ainda não foi avaliado.</p>
+                        {% endif %}
+
+                        <br/>
+                        {% if produto.em_saldo %}
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                        </div>
+
+                        <s>
+                            {{ produto.preco }}€
+                        </s>
+                        &nbsp;
+                        {{ produto.preco_saldo }}€
+                        {% else %}
+                        {{ produto.preco }}€
+                        <br/>
+                        {% endif %}
+
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+
+
+                        <a href="{% url 'home' %}" class="btn btn-secondary">Voltar</a>
+                        <button class="btn btn-secondary addToCartBtn" data-product-id="{{ produto.id }}">Adicionar ao
+                            Carrinho
+                        </button>
+                        <a href="{% url 'review_page' produto.id %}" class="btn btn-secondary">Avaliar</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/><br/><br/><br/>
+{% endblock %}

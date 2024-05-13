@@ -1,0 +1,169 @@
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-body s {
+    color: #999;
+}
+
+.card-body .btn {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.card-body .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.card-body .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+    color: #fff;
+}
+
+.addToCartBtn {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.addToCartBtn:hover {
+    background-color: #0056b3;
+    border-color: #004f9e;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    padding-left: 10px;
+}
+
+.card-body {
+    text-align: center;
+    padding-left: 10px;
+}
+
+
+.card-header {
+    background-color: #000;
+    color: #fff;
+}
+
+.card-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card-body th,
+.card-body td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#clearCartButton {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+#payButton {
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+
+.custom-header {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.custom-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+
+
+
+
+

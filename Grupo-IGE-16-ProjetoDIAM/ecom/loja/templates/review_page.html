@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<header class="custom-header">
+    <div class="container">
+        <div class="text-center">
+            <h1>Avalie o produto</h1>
+            <p>{{ produto.nome }}</p>
+        </div>
+    </div>
+</header>
+
+
+<h2>Avaliar Produto: {{ produto.nome }}</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-secondary ">Enviar avaliaçao
+    </button>
+    <a href="{% url 'home' %}" class="btn btn-secondary">Voltar</a>
+</form>
+
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/>
+{% endblock %}
